@@ -1,0 +1,37 @@
+.products-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: 0 20rpx 20rpx 20rpx;
+}
+.products-item{
+    width: 49%;
+    height: 320rpx;
+    border-radius: 10rpx;
+    background: gainsboro;
+    margin-right: 0;
+    margin-bottom: 10rpx;
+    text-align: center;
+}
+.products-image{
+    width: 80%;
+    height: 220rpx;
+    margin-top: 10rpx;
+    margin-bottom: 0;
+    border-radius: 10rpx;
+}
+.products-item-bottom{
+    text-align: center;
+    margin-bottom: 20rpx;
+    color:#333;
+}
+.name{
+    font-family: 微软雅黑, serif;
+    font-size: 28rpx;
+    font-weight: bold;
+}
+.price{
+    font-family: 微软雅黑, serif;
+    font-size: 24rpx;
+    color: dimgray;
+}

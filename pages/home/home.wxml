@@ -1,4 +1,6 @@
-<!--<view><text>{{message}}</text></view>-->
+<import src="../template/products/products.wxml"></import>
+        <!--<view><text>{{message}}</text></view>-->
+
         <!--<view><text>{{array}}</text></view>-->
         <!--<view wx:if="{{view==='hello'}}"><text>hello</text></view>-->
         <!--<view wx:elif="{{view==='Hello'}}"><text>Hello</text></view>-->
@@ -20,18 +22,27 @@
             duration="{{200}}" indicator-color="orange"
             indicator-active-color="red">
         <block wx:for="{{banners}}" wx:for-item="banner" wx:key="index">
-        <swiper-item>
-            <view class="swiper-item"><image src="{{banner.img.url}}"></image></view>
-        </swiper-item>
-<!--        <swiper-item>-->
-<!--            <view class="swiper-item"><image src="/images/banner/banner-2a.png"></image></view>-->
-<!--        </swiper-item>-->
-<!--        <swiper-item>-->
-<!--            <view class="swiper-item"><image src="/images/banner/banner-3a.png"></image></view>-->
-<!--        </swiper-item>-->
-<!--        <swiper-item>-->
-<!--            <view class="swiper-item"><image src="/images/banner/banner-4a.png"></image></view>-->
-<!--        </swiper-item>-->
+            <swiper-item>
+                <view class="swiper-item">
+                    <image src="{{banner.img.url}}"></image>
+                </view>
+            </swiper-item>
+            <!--        <swiper-item>-->
+            <!--            <view class="swiper-item"><image src="/images/banner/banner-2a.png"></image></view>-->
+            <!--        </swiper-item>-->
+            <!--        <swiper-item>-->
+            <!--            <view class="swiper-item"><image src="/images/banner/banner-3a.png"></image></view>-->
+            <!--        </swiper-item>-->
+            <!--        <swiper-item>-->
+            <!--            <view class="swiper-item"><image src="/images/banner/banner-4a.png"></image></view>-->
+            <!--        </swiper-item>-->
         </block>
     </swiper>
+    <view class="home-main">
+        <!--        推荐新品-->
+        <view class="home-main-products">
+            <view class="home-main-header">推荐新品</view>
+            <template is="products" data="{{products}}"></template>
+        </view>
+    </view>
 </view>

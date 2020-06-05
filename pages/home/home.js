@@ -5,6 +5,7 @@ Page({
             {url: '/images/banner/banner-2a.png'},
             {url: '/images/banner/banner-3a.png'},
         ],
+        products:[],
         message: 'HelloWorld',
         array: [1, 2, 3, 4, 5],
         view: 'HELLO',
@@ -25,7 +26,20 @@ Page({
             }
         })
     },
+    getRecentProducts:function(){
+        var url='http://qhejpxn.cn/api/products/recent?count=6';
+        wx.request({
+            url:url,
+            success:res=>{
+                console.log(res);
+                this.setData({
+                    products:res.data
+                });
+            }
+        })
+    },
     onLoad: function (options) {
         this.getBanners();
+        this.getRecentProducts();
     }
 });
