@@ -1,0 +1,34 @@
+<!--<view><text>{{message}}</text></view>-->
+        <!--<view><text>{{array}}</text></view>-->
+        <!--<view wx:if="{{view==='hello'}}"><text>hello</text></view>-->
+        <!--<view wx:elif="{{view==='Hello'}}"><text>Hello</text></view>-->
+        <!--<view wx:else="{{view==='HELLO'}}"><text>HELLO</text></view>-->
+        <!--<template name="staff">-->
+        <!--    <view>-->
+        <!--        FirstName:{{firstName}},-->
+        <!--        LastName:{{lastName}}-->
+        <!--    </view>-->
+        <!--</template>-->
+        <!--<template is="staffName" data="{{staff1}}"></template>-->
+        <!--<template is="staffName" data="{{staff2}}"></template>-->
+        <!--<template is="staffName" data="{{staff3}}"></template>-->
+<view class="container">
+    <swiper class="swiper" indicator-dots="{{true}}"
+            autoplay="{{true}}"
+            interval="{{2000}}"
+            duration="{{200}}" indicator-color="orange"
+            indicator-active-color="red">
+        <swiper-item>
+            <view class="swiper-item"><image src="/images/banner/banner-1a.png"></image></view>
+        </swiper-item>
+        <swiper-item>
+            <view class="swiper-item"><image src="/images/banner/banner-2a.png"></image></view>
+        </swiper-item>
+        <swiper-item>
+            <view class="swiper-item"><image src="/images/banner/banner-3a.png"></image></view>
+        </swiper-item>
+        <swiper-item>
+            <view class="swiper-item"><image src="/images/banner/banner-4a.png"></image></view>
+        </swiper-item>
+    </swiper>
+</view>
