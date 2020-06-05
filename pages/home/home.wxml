@@ -15,20 +15,23 @@
 <view class="container">
     <swiper class="swiper" indicator-dots="{{true}}"
             autoplay="{{true}}"
+            circular="{{true}}"
             interval="{{2000}}"
             duration="{{200}}" indicator-color="orange"
             indicator-active-color="red">
+        <block wx:for="{{banners}}" wx:for-item="banner" wx:key="index">
         <swiper-item>
-            <view class="swiper-item"><image src="/images/banner/banner-1a.png"></image></view>
+            <view class="swiper-item"><image src="{{banner.img.url}}"></image></view>
         </swiper-item>
-        <swiper-item>
-            <view class="swiper-item"><image src="/images/banner/banner-2a.png"></image></view>
-        </swiper-item>
-        <swiper-item>
-            <view class="swiper-item"><image src="/images/banner/banner-3a.png"></image></view>
-        </swiper-item>
-        <swiper-item>
-            <view class="swiper-item"><image src="/images/banner/banner-4a.png"></image></view>
-        </swiper-item>
+<!--        <swiper-item>-->
+<!--            <view class="swiper-item"><image src="/images/banner/banner-2a.png"></image></view>-->
+<!--        </swiper-item>-->
+<!--        <swiper-item>-->
+<!--            <view class="swiper-item"><image src="/images/banner/banner-3a.png"></image></view>-->
+<!--        </swiper-item>-->
+<!--        <swiper-item>-->
+<!--            <view class="swiper-item"><image src="/images/banner/banner-4a.png"></image></view>-->
+<!--        </swiper-item>-->
+        </block>
     </swiper>
 </view>
