@@ -4,7 +4,8 @@
     "pages/category/category",
     "pages/profile/profile",
     "pages/template/products/products",
-    "pages/template/category_detail/category_detail"
+    "pages/template/category_detail/category_detail",
+    "pages/product/product"
   ],
   "sitemapLocation": "sitemap.json",
   "style": "v2",

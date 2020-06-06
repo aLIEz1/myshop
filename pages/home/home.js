@@ -38,6 +38,12 @@ Page({
             }
         })
     },
+    handleProductsItemTap: function(event){
+        var id=event.currentTarget.dataset.id;
+        wx.navigateTo({
+            url:'/pages/product/product?id='+id,
+        })
+    },
     onLoad: function (options) {
         this.getBanners();
         this.getRecentProducts();

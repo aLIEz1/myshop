@@ -1,0 +1,27 @@
+<view class="container detail-container">
+    <view class="detail-header-box">
+        <image src="{{product.main_img_url}}"
+               mode="aspectFit"></image>
+    </view>
+    <view class="count-box">
+        <view class="product-counts">
+            <picker class="{{product.stock===0?'disabled':''}}"
+                    bindchange="bindPickerChange"
+                    value="{{index}}"
+                    range="{{counts}}"
+                    disabled="{{product.stock===0}}">
+                <view class="counts-tips">
+                    <text class="counts-tips">数量</text>
+                    <text class="counts-data">{{productCounts}}</text>
+                </view>
+            </picker>
+        </view>
+    </view>
+    <view class="basic-info-box">
+        <view class="stock" wx:if="{{product.stock>0}}">有货</view>
+        <view class="stock" wx:else>缺货</view>
+        <view class="name">{{product.name}}</view>
+        <view class="price">￥{{product.price}}</view>
+    </view>
+
+</view>

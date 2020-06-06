@@ -8,7 +8,7 @@
         </view>
         <view class="category-main">
             <block wx:for="{{categoryInfo.products}}" wx:key="index">
-                <view class="category-goods-item {{index % 3===1?'middle':''}}"
+                <view class="category-goods-items {{index % 3===1?'middle':''}}"
                 data-id="{{item.id}}"
                 bindtap="handleProductsItemTap">
                     <image src="{{item.main_img_url}}"></image>

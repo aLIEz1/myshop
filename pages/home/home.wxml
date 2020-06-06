@@ -22,7 +22,8 @@
             duration="{{200}}" indicator-color="orange"
             indicator-active-color="red">
         <block wx:for="{{banners}}" wx:for-item="banner" wx:key="index">
-            <swiper-item>
+            <swiper-item bindtap="handleProductsItemTap"
+            data-id="{{banner.key_word}}">
                 <view class="swiper-item">
                     <image src="{{banner.img.url}}"></image>
                 </view>
