@@ -3,7 +3,8 @@
     "pages/home/home",
     "pages/category/category",
     "pages/profile/profile",
-    "pages/template/products/products"
+    "pages/template/products/products",
+    "pages/template/category_detail/category_detail"
   ],
   "sitemapLocation": "sitemap.json",
   "style": "v2",

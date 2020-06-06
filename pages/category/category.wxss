@@ -1,0 +1,34 @@
+@import "../template/category_detail/category_detail.wxss";
+.category-box {
+    display: flex;
+    height: 100%;
+}
+
+.left-box {
+    flex: 0 0 120rpx;
+    border-right: 1rpx solid #D8D8D8;
+}
+
+.menu-item {
+    height: 50rpx;
+    padding: 20rpx 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28rpx;
+    border-left: 6rpx solid #fff;
+}
+
+.menu-item.selected {
+    color: red;
+    border-left-color: gold;
+}
+
+.right-box {
+    flex: 1;
+    transition: all 1000ms ease-in-out;
+}
+
+.foods-type-box {
+    height: 100%;
+}

@@ -1,0 +1,20 @@
+<template name="category_detail">
+    <view class="category-detail-box">
+        <view class="category-header">
+            <image src="{{categoryInfo.topImgUrl}}"></image>
+        </view>
+        <view class="category-title">
+            <text>{{categoryInfo.title}}</text>
+        </view>
+        <view class="category-main">
+            <block wx:for="{{categoryInfo.products}}" wx:key="index">
+                <view class="category-goods-item {{index % 3===1?'middle':''}}"
+                data-id="{{item.id}}"
+                bindtap="handleProductsItemTap">
+                    <image src="{{item.main_img_url}}"></image>
+                    <view>{{item.name}}</view>
+                </view>
+            </block>
+        </view>
+    </view>
+</template>
