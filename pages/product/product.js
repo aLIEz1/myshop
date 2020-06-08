@@ -5,6 +5,7 @@ Page({
         index:0,
         counts:[1,2,3,4,5,6,7,8,9,10],
         productCounts:1,//选中的数量
+        currentTabsIndex:0,//选中的页签
     },
     getProductInfo:function(productId){
       var url='http://qhejpxn.cn/api/product/'+productId;
@@ -22,6 +23,12 @@ Page({
         this.setData({
             index,
             productCounts:this.data.counts[index],
+        })
+    },
+    handleTabsItemTap:function(event){
+        var index=event.currentTarget.dataset.index;
+        this.setData({
+            currentTabsIndex:index
         })
     },
     onLoad: function (options) {
