@@ -15,6 +15,12 @@
         <!--<template is="staffName" data="{{staff2}}"></template>-->
         <!--<template is="staffName" data="{{staff3}}"></template>-->
 <view class="container">
+    <view class="search-box">
+        <input
+                placeholder="请输入喜欢的商品"
+                bindconfirm="handleSearch"/>
+        <icon type="search" class="icons"/>
+    </view>
     <swiper class="swiper" indicator-dots="{{true}}"
             autoplay="{{true}}"
             circular="{{true}}"
@@ -23,7 +29,7 @@
             indicator-active-color="red">
         <block wx:for="{{banners}}" wx:for-item="banner" wx:key="index">
             <swiper-item bindtap="handleProductsItemTap"
-            data-id="{{banner.key_word}}">
+                         data-id="{{banner.key_word}}">
                 <view class="swiper-item">
                     <image src="{{banner.img.url}}"></image>
                 </view>
